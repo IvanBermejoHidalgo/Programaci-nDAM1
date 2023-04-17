@@ -81,7 +81,7 @@ public class Lectura {
     public int leerOpcionMenu() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Elección: ");
+        System.out.print(Colores.RED_BOLD+"Elección: ");
         int eleccion = scanner.nextInt();
         scanner.nextLine();
 
@@ -91,7 +91,7 @@ public class Lectura {
     public int leerCodigoEliminar() {
         Scanner scanner = new Scanner(System.in);
         //eliminar producto
-        System.out.println("Introduce el código del producto que quieres eliminar:");
+        System.out.println("Introduce el código del piloto/coche/circuito que quieres eliminar:");
         int idP = scanner.nextInt();
         return idP;
     }

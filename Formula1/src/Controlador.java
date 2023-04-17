@@ -44,16 +44,16 @@ public class Controlador {
 
     public void anadirPiloto(Piloto piloto) {
         almacen.listaPilotos.add(piloto);
-        System.out.println("Piloto añadido con éxito.");
+        System.out.println(Colores.GREEN_BOLD+"Piloto añadido con éxito.");
     }
 
     public void anadirCoche(Coche coche) {
         almacen.listaCoche.add(coche);
-        System.out.println("Coche añadido con éxito.");
+        System.out.println(Colores.YELLOW_BOLD+"Coche añadido con éxito.");
     }
 
     public void anadirCircuito(Circuito circuito) {
         almacen.listaCircuito.add(circuito);
-        System.out.println("Circuito añadido con éxito.");
+        System.out.println(Colores.PURPLE_BOLD+"Circuito añadido con éxito.");
     }
 }

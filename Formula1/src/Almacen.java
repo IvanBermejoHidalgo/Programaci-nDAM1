@@ -8,10 +8,16 @@ public class Almacen {
     ArrayList<Circuito> listaCircuito;
 
     // CONSTRUCTOR PARA INSTANCIAR LAS ARRAYLIST
-    Almacen() {
+    public Almacen() {
         this.listaPilotos = new ArrayList<Piloto>();
+        this.listaPilotos.add(new Piloto(1,"FERNANDO ALONSO","ALO",14));
+        this.listaPilotos.add(new Piloto(2,"LEWIS HAMILTON","HAM",44));
         this.listaCoche = new ArrayList<Coche>();
+        this.listaCoche.add(new Coche(1,"ASTON MARTIN","MERCEDES",33));
+        this.listaCoche.add(new Coche(2,"MERCEDES","MERCEDES",63));
         this.listaCircuito = new ArrayList<Circuito>();
+        this.listaCircuito.add(new Circuito(1,"ABU DHABI", 4.5F,51.1F));
+        this.listaCircuito.add(new Circuito(2,"IMOLA", 3.3F,33.3F));
     }
 
     @Override
