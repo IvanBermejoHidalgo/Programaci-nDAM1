@@ -25,8 +25,24 @@ public class Main {
                 controlador.listar();
             } else if (eleccion == 5) {
                 int idP = lectura.leerCodigoEliminar();
-                controlador.eliminar(idP);
+                controlador.eliminarPiloto(idP); // PILOTO
+            } else if (eleccion == 6) {
+                int idP = lectura.leerCodigoEliminar();
+                controlador.eliminarCoche(idP); // COCHE
+            } else if (eleccion == 7) {
+                int idP = lectura.leerCodigoEliminar();
+                controlador.eliminarCircuito(idP); // CIRCUITO
+            } else if (eleccion == 8) {
+                int idP = lectura.leerCodigoEliminar();
+                controlador.modificarPiloto(idP);
+            } else if (eleccion == 9) {
+                int idP = lectura.leerCodigoEliminar();
+                controlador.modificarCoche(idP);
+            } else if (eleccion == 10) {
+                int idP = lectura.leerCodigoEliminar();
+                controlador.modificarCircuito(idP);
             }
+
         } while (eleccion != 0); // SALIR DEL BUCLE
 
 
