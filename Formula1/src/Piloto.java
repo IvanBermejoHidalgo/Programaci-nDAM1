@@ -6,12 +6,18 @@ public class Piloto {
     private String abreviacion;
     private int numeroP;
 
-    public int getIdP() { return idP; }
-    public void setIdP(int idP) { this.idP = idP; }
+    public int getIdP() {
+        return idP;
+    }
+
+    public void setIdP(int idP) {
+        this.idP = idP;
+    }
 
     public String getNombreP() {
         return nombreP;
     }
+
     public void setNombreP(String nombreP) {
         this.nombreP = nombreP;
     }
@@ -19,12 +25,18 @@ public class Piloto {
     public String getAbreviacion() {
         return abreviacion;
     }
+
     public void setAbreviacion(String abreviacion) {
         this.abreviacion = abreviacion;
     }
 
-    public int getNumeroP() { return numeroP; }
-    public void setNumeroP(int numeroP) { this.numeroP = numeroP; }
+    public int getNumeroP() {
+        return numeroP;
+    }
+
+    public void setNumeroP(int numeroP) {
+        this.numeroP = numeroP;
+    }
 
     // CONSTRUCTOR DE TIPO PILOTO PARA CREAR OBJETOS
     Piloto(int idP, String nombreP, String abreviacion, int numeroP){
@@ -40,8 +52,5 @@ public class Piloto {
     public String toString() {
         return idP+"\t\t\t\t\t"+nombreP+"\t\t\t\t\t\t\t"+abreviacion+"\t\t\t\t\t\t\t"+numeroP;
     }
-
-
-
 
 }
