@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Controlador {
     Almacen almacen = new Almacen();
 
+    // ELIMINAR PILOTOS
     public void eliminarPiloto(int idP) {
         boolean borrar = false;
         for (int i = 0; i < almacen.listaPilotos.size(); i++) {
@@ -17,7 +18,7 @@ public class Controlador {
         }
     }
 
-
+    // ELIMINAR COCHE
     public void eliminarCoche(int idP) {
         boolean borrar = false;
         for (int i = 0; i < almacen.listaCoche.size(); i++) {
@@ -31,6 +32,7 @@ public class Controlador {
         }
     }
 
+    // ELIMINAR CIRCUITO
     public void eliminarCircuito(int idP) {
         boolean borrar = false;
         for (int i = 0; i < almacen.listaCircuito.size(); i++) {
@@ -44,23 +46,25 @@ public class Controlador {
         }
     }
 
-
+    // LISTAR PILOTO/COCHE/CIRCUITO
     public void listar() {
         // LISTAR
         System.out.println(almacen);
     }
 
-
+    // AÑADIR PILOTO
     public void anadirPiloto(Piloto piloto) {
         almacen.listaPilotos.add(piloto);
         System.out.println(Colores.GREEN_BOLD + "PILOTO AÑADIDO CON ÉXITO." + Colores.RESET);
     }
 
+    // AÑADIR COCHE
     public void anadirCoche(Coche coche) {
         almacen.listaCoche.add(coche);
         System.out.println(Colores.YELLOW_BOLD + "COCHE AÑADIDO CON ÉXITO." + Colores.RESET);
     }
 
+    // AÑADIR CIRCUITO
     public void anadirCircuito(Circuito circuito) {
         almacen.listaCircuito.add(circuito);
         System.out.println(Colores.PURPLE_BOLD + "CIRCUITO AÑADIDO CON ÉXITO." + Colores.RESET);

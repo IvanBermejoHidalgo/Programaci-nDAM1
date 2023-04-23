@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Lectura {
+    // PREGUNTAS PARA AÑADIR PILOTO
     public Piloto leerPiloto() {
         Scanner scanner = new Scanner(System.in);
         System.out.println(Colores.BLUE+"══════════════════════════════════════════"+Colores.RESET);
@@ -26,7 +27,7 @@ public class Lectura {
 
     }
 
-
+    // PREGUNTAS PARA AÑADIR COCHE
     public Coche leerCoche() {
         Scanner scanner = new Scanner(System.in);
         System.out.println(Colores.BLUE+"══════════════════════════════════════════"+Colores.RESET);
@@ -51,6 +52,7 @@ public class Lectura {
         return new Coche(idP,scuderia,motor,numeroC);
     }
 
+    // PREGUNTAS PARA AÑADIR CIRCUITO
     public Circuito leerCircuito() {
         Scanner scanner = new Scanner(System.in);
         System.out.println(Colores.BLUE+"══════════════════════════════════════════"+Colores.RESET);
@@ -72,12 +74,11 @@ public class Lectura {
         System.out.println(Colores.BLUE+"══════════════════════════════════════════"+Colores.RESET);
 
         // GUARDA LAS VARIABLES EN LA ARRAYLIST
-        //controlador.anadir(idP, nombreP, abreviacion, numeroP, scuderia, motor, numeroC, nombreCir, kilometros, temperatura);
-        //return new Circuito(nombreCir,kilometros,temperatura);
         scanner.nextLine();
         return new Circuito(idP,nombreCir,kilometros,temperatura);
     }
 
+    // LECTURA DE "Elección" DEL MENU PRINCIPAL
     public int leerOpcionMenu() {
         Scanner scanner = new Scanner(System.in);
 
@@ -88,9 +89,9 @@ public class Lectura {
         return eleccion;
     }
 
+    // ELIMINAR PILOTO/COCHE/CIRCUITO
     public int leerCodigoEliminar() {
         Scanner scanner = new Scanner(System.in);
-        //eliminar producto
         System.out.println(Colores.BLUE+"Introduce el código del piloto/coche/circuito que quieres eliminar:"+Colores.RESET);
         int idP = scanner.nextInt();
         return idP;

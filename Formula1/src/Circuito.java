@@ -5,7 +5,6 @@ public class Circuito {
     private float kilometros;
     private float temperatura;
 
-
     public int getIdP() {
         return idP;
     }
