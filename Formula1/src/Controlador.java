@@ -39,7 +39,7 @@ public class Controlador {
             if (almacen.listaCircuito.get(i).getIdP() == idP) {
                 almacen.listaCircuito.remove(i);
                 borrar = true;
-                System.out.println(Colores.CYAN_BOLD + "CIRCUITO ELIMINADO." + Colores.RESET);
+                System.out.println(Colores.PURPLE_BOLD + "CIRCUITO ELIMINADO." + Colores.RESET);
                 break;
             }
             if (!borrar) System.out.println(Colores.RED + "NO SE HA PODIDO ELIMINAR." + Colores.RESET);

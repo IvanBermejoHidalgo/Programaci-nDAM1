@@ -89,11 +89,53 @@ public class Lectura {
         return eleccion;
     }
 
-    // ELIMINAR PILOTO/COCHE/CIRCUITO
-    public int leerCodigoEliminar() {
+    // PREGUNTA ELIMINAR PILOTO
+    public int leerCodigoEliminarPiloto() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println(Colores.BLUE+"Introduce el código del piloto/coche/circuito que quieres eliminar:"+Colores.RESET);
+        System.out.println(Colores.BLUE+"Introduce el código del piloto que quieres eliminar:"+Colores.RESET);
         int idP = scanner.nextInt();
         return idP;
     }
+
+    // PREGUNTA ELIMINAR COCHE
+
+    public int leerCodigoEliminarCoche() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(Colores.BLUE+"Introduce el código del coche que quieres eliminar:"+Colores.RESET);
+        int idP = scanner.nextInt();
+        return idP;
+    }
+
+    // PREGUNTA ELIMINAR CIRCUITO
+    public int leerCodigoEliminarCircuito() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(Colores.BLUE+"Introduce el código del circuito que quieres eliminar:"+Colores.RESET);
+        int idP = scanner.nextInt();
+        return idP;
+    }
+
+    // PREGUNTA MODIFICAR PILOTO
+    public int leerCodigoModificarPiloto() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(Colores.BLUE+"Introduce el código del piloto que quieres modificar:"+Colores.RESET);
+        int idP = scanner.nextInt();
+        return idP;
+    }
+
+    // PREGUNTA MODIFICAR COCHE
+    public int leerCodigoModificarCoche() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(Colores.BLUE+"Introduce el código del coche que quieres modificar:"+Colores.RESET);
+        int idP = scanner.nextInt();
+        return idP;
+    }
+
+    // PREGUNTA MODIFICAR CIRCUITO
+    public int leerCodigoModificarCircuito() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(Colores.BLUE+"Introduce el código del circuito que quieres modificar:"+Colores.RESET);
+        int idP = scanner.nextInt();
+        return idP;
+    }
+
 }

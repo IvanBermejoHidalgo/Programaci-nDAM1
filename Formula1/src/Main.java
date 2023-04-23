@@ -14,33 +14,33 @@ public class Main {
             // CONDICIONAL PARA LAS ELECCIONES
             if (eleccion == 1) {
                 Piloto piloto = lectura.leerPiloto();
-                controlador.anadirPiloto(piloto);
+                controlador.anadirPiloto(piloto); // AÑADIR PILOTO
             } else if (eleccion == 2) {
                 Coche coche = lectura.leerCoche();
-                controlador.anadirCoche(coche);
+                controlador.anadirCoche(coche); // AÑADIR COCHE
             } else if (eleccion == 3) {
                 Circuito circuito = lectura.leerCircuito();
-                controlador.anadirCircuito(circuito);
+                controlador.anadirCircuito(circuito); // AÑADIR CIRCUITO
             } else if (eleccion == 4) {
-                controlador.listar();
+                controlador.listar(); // LISTAR PILOTO/COCHE/CIRCUITO
             } else if (eleccion == 5) {
-                int idP = lectura.leerCodigoEliminar();
-                controlador.eliminarPiloto(idP); // PILOTO
+                int idP = lectura.leerCodigoEliminarPiloto();
+                controlador.eliminarPiloto(idP); // ELIMINAR PILOTO
             } else if (eleccion == 6) {
-                int idP = lectura.leerCodigoEliminar();
-                controlador.eliminarCoche(idP); // COCHE
+                int idP = lectura.leerCodigoEliminarCoche();
+                controlador.eliminarCoche(idP); // ELIMINAR COCHE
             } else if (eleccion == 7) {
-                int idP = lectura.leerCodigoEliminar();
-                controlador.eliminarCircuito(idP); // CIRCUITO
+                int idP = lectura.leerCodigoEliminarCircuito();
+                controlador.eliminarCircuito(idP); // ELIMINAR CIRCUITO
             } else if (eleccion == 8) {
-                int idP = lectura.leerCodigoEliminar();
-                controlador.modificarPiloto(idP);
+                int idP = lectura.leerCodigoModificarPiloto();
+                controlador.modificarPiloto(idP); // MODIFICAR PILOTO
             } else if (eleccion == 9) {
-                int idP = lectura.leerCodigoEliminar();
-                controlador.modificarCoche(idP);
+                int idP = lectura.leerCodigoModificarCoche();
+                controlador.modificarCoche(idP); // MODIFICAR COCHE
             } else if (eleccion == 10) {
-                int idP = lectura.leerCodigoEliminar();
-                controlador.modificarCircuito(idP);
+                int idP = lectura.leerCodigoModificarCircuito();
+                controlador.modificarCircuito(idP); // MODIFICAR CIRCUITO
             }
 
         } while (eleccion != 0); // SALIR DEL BUCLE
