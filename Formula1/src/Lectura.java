@@ -1,14 +1,29 @@
 import java.util.Scanner;
 
 public class Lectura {
+    Almacen almacen = new Almacen();
     // PREGUNTAS PARA AÑADIR PILOTO
     public Piloto leerPiloto() {
         Scanner scanner = new Scanner(System.in);
+        int idP = 0;
         System.out.println(Colores.BLUE+"══════════════════════════════════════════"+Colores.RESET);
-        System.out.println("Introduce el ID del piloto/coche/circuito:");
-        int idP = scanner.nextInt();
+        boolean existeono = true;
+        while (existeono) {
+            System.out.println("Introduce el ID del piloto");
+            idP = scanner.nextInt();
+            scanner.nextLine();
+
+            existeono = false;
+            for (Piloto p : almacen.listaPilotos) {
+                if (p.getIdP() == idP) {
+                    existeono = true;
+                    System.out.println("La ID ya está en uso. Ingrese un código diferente.");
+                    break;
+                }
+            }
+
+        }
         System.out.println(Colores.BLUE+"══════════════════════════════════════════");
-        scanner.nextLine();
         System.out.println(Colores.BLUE+"┌─────────────────────────────────────────┐");
         System.out.println(Colores.BLUE+"│"+Colores.GREEN_BOLD+"                  PILOTO                 "+Colores.BLUE+"│");
         System.out.println(Colores.BLUE+"└─────────────────────────────────────────┘");
@@ -30,10 +45,24 @@ public class Lectura {
     // PREGUNTAS PARA AÑADIR COCHE
     public Coche leerCoche() {
         Scanner scanner = new Scanner(System.in);
+        int idP = 0;
         System.out.println(Colores.BLUE+"══════════════════════════════════════════"+Colores.RESET);
-        System.out.println("Introduce el ID del piloto/coche/circuito:");
-        int idP = scanner.nextInt();
-        scanner.nextLine();
+        boolean existeono = true;
+        while (existeono) {
+            System.out.println("Introduce el ID del coche:");
+            idP = scanner.nextInt();
+            scanner.nextLine();
+
+            existeono = false;
+            for (Coche c : almacen.listaCoche) {
+                if (c.getIdP() == idP) {
+                    existeono = true;
+                    System.out.println("La ID ya está en uso. Ingrese un código diferente.");
+                    break;
+                }
+            }
+
+        }
         System.out.println(Colores.BLUE+"══════════════════════════════════════════");
         System.out.println(Colores.BLUE+"┌─────────────────────────────────────────┐");
         System.out.println(Colores.BLUE+"│"+Colores.YELLOW_BOLD+"                  COCHE                  "+Colores.BLUE+"│");
@@ -55,10 +84,24 @@ public class Lectura {
     // PREGUNTAS PARA AÑADIR CIRCUITO
     public Circuito leerCircuito() {
         Scanner scanner = new Scanner(System.in);
+        int idP = 0;
         System.out.println(Colores.BLUE+"══════════════════════════════════════════"+Colores.RESET);
-        System.out.println("Introduce el ID del piloto/coche/circuito:");
-        int idP = scanner.nextInt();
-        scanner.nextLine();
+        boolean existeono = true;
+        while (existeono) {
+            System.out.println("Introduce el ID del circuito:");
+            idP = scanner.nextInt();
+            scanner.nextLine();
+
+            existeono = false;
+            for (Circuito ci : almacen.listaCircuito) {
+                if (ci.getIdP() == idP) {
+                    existeono = true;
+                    System.out.println("La ID ya está en uso. Ingrese un código diferente.");
+                    break;
+                }
+            }
+
+        }
         System.out.println(Colores.BLUE+"══════════════════════════════════════════");
         System.out.println(Colores.BLUE+"┌─────────────────────────────────────────┐");
         System.out.println(Colores.BLUE+"│"+Colores.PURPLE_BOLD+"                 CIRCUITO                "+Colores.BLUE+"│");
